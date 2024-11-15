@@ -1,0 +1,5 @@
+msg = input().strip()
+if (msg.isdigit() and len(msg) == 10 and sum(map(int, msg)) > 0) or (msg.startswith('+') and ' ' in msg and 1 <= len(msg.split()[0][1:]) <= 2 and msg.split()[1].isdigit() and len(msg.split()[1]) == 10 and sum(map(int, msg.split()[1])) > 0):
+    print("Correct")
+else:
+    print("Incorrect")
