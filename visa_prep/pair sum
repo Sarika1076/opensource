@@ -1,0 +1,4 @@
+N = int(input())
+arr = list(map(int, input().split()))
+k = int(input())
+print("true" if any(k - x in arr for x in arr) else "false")
