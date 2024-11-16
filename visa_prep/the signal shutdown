@@ -1,0 +1,4 @@
+N, M = map(int, input().split())
+grid = [list(map(int, input().split())) for _ in range(N)]
+rows, cols = {i for i in range(N) if 0 in grid[i]}, {j for j in range(M) if any(grid[i][j] == 0 for i in range(N))}
+for i in range(N): print(*[0 if i in rows or j in cols else grid[i][j] for j in range(M)])
