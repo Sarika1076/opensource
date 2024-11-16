@@ -1,0 +1,4 @@
+N = int(input())
+arr = list(map(int, input().split()))
+K = int(input()) % N
+print(*arr[-K:] + arr[:-K]) if K else print(*arr)
