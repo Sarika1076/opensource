@@ -1,0 +1,5 @@
+s = input().strip()
+if 1 < len(s) < 100:
+    print("TRUE" if s == s[::-1] else "FALSE")
+else:
+    print("FALSE")
