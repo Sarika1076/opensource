@@ -1,0 +1,3 @@
+n = int(input())
+attendance= list(map(int, input().split()))
+print(max(len(s) for s in "".join(map(str, attendance)).split('1')))
